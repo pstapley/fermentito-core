@@ -23,6 +23,10 @@ void setup() {
   Serial.println(version);
   Serial.print("ID: ");
   Serial.println(id);
+
+  WiFiManager wifiManager; 
+
+  wifiManager.autoConnect(id);
 }
 
 void loop() {
